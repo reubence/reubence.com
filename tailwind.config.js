@@ -37,7 +37,7 @@ module.exports = {
         arrow2: ['Montserrat Alternates', 'sans-serif'],
       },
       colors: {
-        primary: colors.teal,
+        primary: colors.blue,
         //@ts-ignore
         gray: colors.neutral, // TODO: Remove ts-ignore after tw types gets updated to v3
         'background-color': '#000',

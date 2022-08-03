@@ -19,18 +19,11 @@ export default function Footer() {
             <div>
               {`© ${new Date().getFullYear()}`} {siteMetadata.author}
             </div>
-            <div>{` • `}</div>
             {/* <Link href="/">{siteMetadata.title}</Link> */}
-            <Link
-              href={siteMetadata.rss}
-              className="hover:text-primary-500 hover:underline hover:underline-offset-4"
-            >
-              RSS Feed
-            </Link>
             <div>{` • `}</div>
             <Link
               href="https://github.com/reubence/reubence.com"
-              className="hover:text-primary-500 hover:underline hover:underline-offset-4"
+              className="hover:text-blue-500 hover:underline hover:underline-offset-4"
             >
               Clone Theme
             </Link>

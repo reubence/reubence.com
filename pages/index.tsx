@@ -25,60 +25,64 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide divide-gray-200 px-2 dark:divide-gray-700 sm:px-0">
-        <div className="grid grid-cols-1 space-y-10 py-4 sm:space-y-5 sm:py-14 xl:grid-cols-5">
+        <div className="grid grid-cols-1 space-y-10 py-4 text-center sm:space-y-5 sm:py-14">
           <div className="col-span-3 justify-center space-y-5 align-middle">
-            <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:rounded-lg before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7 sm:ml-40">
-              <span className="relative inline-block -rotate-6 text-primary-500">
+            <span className="relative inset-y-4 ml-24 inline-block px-1 before:absolute before:-inset-1 before:block before:-skew-y-6 before:rounded-lg before:bg-primary-600 before:bg-opacity-20 sm:inset-y-7">
+              <span className="relative inline-block -rotate-6 text-primary-500 ">
                 <Link
-                  href="https://twitter.com/reubence_"
-                  className="font-arrow2 text-sm font-bold text-primary-500 transition hover:underline hover:underline-offset-8 sm:text-xl"
+                  href="https://twitter.com/emsesc"
+                  className="font-arrow2 text-sm font-bold text-blue-500 transition hover:underline hover:underline-offset-8 sm:text-xl"
                 >
-                  @reubence
+                  @emsesc
                 </Link>
               </span>
             </span>
             <h1 className="pt-2 text-4xl font-bold leading-9 tracking-tight text-background-color dark:text-gray-100 sm:text-5xl sm:leading-10 md:text-6xl md:leading-snug">
-              Reuben
-              <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-primary-500 sm:inset-y-14">
+              emily
+              <span className="relative inset-y-8 ml-2 inline-block -rotate-12 font-arrow text-blue-500 sm:inset-y-14">
                 ^
               </span>
-              Rapose
+              chen
             </h1>
             <p className="text-black dark:text-white sm:pr-6 sm:text-lg sm:leading-8">
-              Welcome to my Digital Garden – I am a <span className="">Data Scientist</span> by
-              training and <span className="">Full-Stack Developer</span> by passion who loves
-              building for the web & mobile. Also sometimes for the toaster.{' '}
-              {/* In my
-              free time, I like developing{' '}
+              hi! glad you've stumbled upon my digital space. this is where I{' '}
               <Link
                 href="/projects"
-                className="text-black underline decoration-primary-500 underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-white hover:dark:text-primary-500"
+                className="text-black underline decoration-pink-500 underline-offset-4 hover:cursor-pointer hover:text-pink-500 dark:text-white hover:dark:text-pink-500"
               >
-                <a>side projects</a>
+                <a>write some words</a>
               </Link>{' '}
-              and{' '}
+              (psst here are some{' '}
+              <Link href="https://dev.to/emsesc">
+                <a className="text-black underline decoration-violet-500 underline-offset-4 hover:cursor-pointer hover:text-violet-500 dark:text-white hover:dark:text-violet-500">
+                  <i>technical</i> blogs
+                </a>
+              </Link>
+              ) and show off{' '}
               <Link href="/blog">
-                <a className="text-black underline decoration-primary-500 underline-offset-4 hover:cursor-pointer hover:text-primary-500 dark:text-white hover:dark:text-primary-500">
-                  blogging
+                <a className="text-black underline decoration-teal-500 underline-offset-4 hover:cursor-pointer hover:text-teal-500 dark:text-white hover:dark:text-teal-500">
+                  some stuff I've created
                 </a>
               </Link>{' '}
-              about my journey as an Entrepreneur. */}
-              Have a good read! <span className="waving-hand text-2xl">👋🏻</span>
+              during my time as I explore intersections between technology and society. btw, I like
+              escape rooms <span className="waving-hand text-2xl">🔑</span>
             </p>
             <p className="leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-lg">
               <Link
-                href="/about"
+                href="/now"
                 className="hover:cursor-pointer hover:text-primary-500 dark:text-gray-500 hover:dark:text-primary-500"
               >
-                <a>Read the rest of my bio &rarr;</a>
+                <a>
+                  What I am doing <i>now</i>? &rarr;
+                </a>
               </Link>
             </p>
           </div>
-          {siteMetadata.newsletter.provider !== '' && (
+          {/* {siteMetadata.newsletter.provider !== '' && (
             <div className="col-span-2 flex xl:items-center xl:justify-center xl:pl-6">
               <NewsletterForm />
             </div>
-          )}
+          )} */}
         </div>
 
         <h1 className="my-4 mt-16 pb-2 text-3xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">

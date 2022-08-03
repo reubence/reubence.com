@@ -1,23 +1,20 @@
 const siteMetadata = {
-  title: `Reuben Rapose`,
-  author: 'Reuben Rapose',
-  headerTitle: 'Reuben Rapose',
+  title: `Emily Chen`,
+  author: 'Emily Chen',
+  headerTitle: 'Emily Chen',
   description:
     'Reuben is a Data Scientist by training and Full-Stack Developer by passion. In his early teens, while pursuing his obsession with technology, he discovered a passion for building tech that makes a difference – Today, Reuben works as an independent Consultant, get in touch. ✌︎',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://reubence.com',
-  siteRepo: 'https://github.com/reubence/reubence.com',
-  rss: 'https://reubence.com/feed.xml',
+  siteUrl: 'https://emilychen.me',
+  siteRepo: 'https://github.com/emsesc/emilychen.me',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/twitter-card.png',
-  email: 'reuben.rapose@gmail.com',
-  github: 'https://github.com/reubence',
-  twitter: 'https://twitter.com/reuben_rapose',
-  facebook: 'https://facebook.com/reuben.rapose',
-  youtube: 'https://youtube.com/reuben.rapose',
-  linkedin: 'https://www.linkedin.com/in/reubence',
+  email: 'emseschen@gmail.com',
+  github: 'https://github.com/emsesc',
+  twitter: 'https://twitter.com/emsesc',
+  linkedin: 'https://www.linkedin.com/in/emilyschen',
   locale: 'en-US',
   analytics: {
     // If you want to use an analytics provider you have to add it to the

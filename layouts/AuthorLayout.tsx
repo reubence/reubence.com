@@ -2,6 +2,7 @@ import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 import { ReactNode } from 'react'
+import Link from '@/components/Link'
 import { AuthorFrontMatter } from 'types/AuthorFrontMatter'
 import Experience from '@/components/Experience'
 import experienceData from '@/data/experienceData'
@@ -18,76 +19,42 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
 
   return (
     <>
-      <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
+      <PageSEO title={`Now - ${name}`} description={`Happenning Now - ${name}`} />
       <div className="mt-10 px-2 sm:px-0">
-        {/* <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-          <h1 className=" text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Jack Of All Trades, Master Of One
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            what are you doing,{' '}
+            <Link href="https://dev.to/emsesc">
+              <a className="text-black underline decoration-violet-500 underline-offset-4 hover:cursor-pointer hover:text-violet-500 dark:text-white hover:dark:text-violet-500">
+                really
+              </a>
+            </Link>
+            ?{' '}
           </h1>
-        </div> */}
+          <h3 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-2xl md:leading-14">
+            Last updated August 3rd, 2022
+          </h3>
+        </div>
         <div className="items-start space-y-2  xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 xl:sticky xl:top-24">
-            <Image
-              src={avatar}
-              alt="avatar"
-              width="192px"
-              height="192px"
-              className="h-48 w-48 rounded-full"
-            />
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
-            <div className="text-gray-500 dark:text-gray-400">{occupation}</div>
-            <div className="text-gray-500 dark:text-gray-400">{company}</div>
-            <div className="flex space-x-3 pt-6">
-              <SocialIcon kind="mail" href={`mailto:${email}`} />
-              <SocialIcon kind="github" href={github} />
-              <SocialIcon kind="linkedin" href={linkedin} />
-              <SocialIcon kind="twitter" href={twitter} />
+            <div className="group relative text-center">
+              <div className="animate-tilt absolute -inset-px animate-pulse rounded-2xl bg-gradient-to-r from-primary-500 via-[#3B82F6] to-[#9333EA] blur-md transition duration-1000 group-hover:-inset-1 group-hover:animate-none group-hover:opacity-100 group-hover:duration-1000"></div>
+              <div className="relative h-full w-full rounded-2xl bg-white px-6 py-6 dark:bg-background-color sm:px-12">
+                <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+                  🏔
+                </h1>
+                <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+                  emily chen
+                </h3>
+                <div className="text-gray-500 dark:text-gray-400">aspiring escape room master</div>
+                <div className="text-gray-500 dark:text-gray-400">
+                  currently in <b>the mountains</b>
+                </div>{' '}
+              </div>
             </div>
           </div>
           <div className="prose prose-lg max-w-none pt-8 pb-8 dark:prose-dark sm:prose-xl xl:col-span-2">
             {children}
-          </div>
-        </div>
-        <div className="mt-10">
-          <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Experience
-            </h1>
-          </div>
-          <div className="max-w-none pt-8 pb-8 xl:col-span-2">
-            {experienceData.map((d) => (
-              <Experience
-                key={d.company}
-                title={d.title}
-                company={d.company}
-                location={d.location}
-                range={d.range}
-                url={d.url}
-                text1={d.text1}
-                text2={d.text2}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="mt-10">
-          <div className="space-y-2 pt-6 pb-8 md:space-y-5">
-            <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-              Education
-            </h1>
-          </div>
-          <div className="max-w-none pt-8 pb-8 xl:col-span-2">
-            {educationData.map((d) => (
-              <Education
-                key={d.company}
-                title={d.title}
-                company={d.company}
-                location={d.location}
-                range={d.range}
-                url={d.url}
-                text1={d.text1}
-                text2={d.text2}
-              />
-            ))}
           </div>
         </div>
       </div>
