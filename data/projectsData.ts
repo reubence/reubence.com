@@ -7,7 +7,7 @@ const projectsData = [
       'An interactive curriculum on GitHub that introduces students to serverless architectures',
     tags: ['serverless', 'azure', 'nodejs', 'apis', 'html/css'],
     href: 'https://github.com/bitprj/Intro-To-Serverless',
-    demo: 'https://github.com/bitprj/Intro-To-Serverless',
+    demo: 'https://www.bitproject.org/serverless',
   },
   {
     title: 'CounselorBot',
