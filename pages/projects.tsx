@@ -17,13 +17,13 @@ export default function Projects() {
             A collection of projects I've worked on.
           </p>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            PS : I'm still designing this page, please visit my{' '}
+            You can also visit my{' '}
             <Link href="https://github.com/emsesc" passHref>
               <span className="company font-bold text-primary-500 hover:cursor-pointer">
-                GitHub
+                GitHub &rarr;
               </span>
             </Link>{' '}
-            for better understanding of my work or skills.
+            for a complete showcase of my code!
           </p>
         </div>
         <div className="container py-12">
@@ -35,6 +35,7 @@ export default function Projects() {
                 description={d.description}
                 imgSrc={d.imgSrc}
                 href={d.href}
+                demo={d.demo}
               />
             ))}
           </div>
