@@ -1,4 +1,5 @@
 import Link from '@/components/Link'
+import Tag from '@/components/Tag'
 import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
@@ -45,9 +46,11 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               chen
             </h1>
             <p className="text-black dark:text-white sm:pr-6 sm:text-lg sm:leading-8">
-              hi! glad you've stumbled upon my digital space. this is where I{' '}
+              hi! I'm glad you've stumbled upon{' '}
+              <h3 className="inline-block text-blue-500">my corner of the internet</h3>. this is
+              where I{' '}
               <Link
-                href="/projects"
+                href="/blog"
                 className="text-black underline decoration-pink-500 underline-offset-4 hover:cursor-pointer hover:text-pink-500 dark:text-white hover:dark:text-pink-500"
               >
                 <a>write some words</a>
@@ -59,13 +62,13 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                 </a>
               </Link>
               ) and show off{' '}
-              <Link href="/blog">
+              <Link href="/projects">
                 <a className="text-black underline decoration-teal-500 underline-offset-4 hover:cursor-pointer hover:text-teal-500 dark:text-white hover:dark:text-teal-500">
-                  some stuff I've created
+                  some stuff I've create
                 </a>
               </Link>{' '}
-              during my time as I explore intersections between technology and society. btw, I like
-              escape rooms <span className="waving-hand text-2xl">🔑</span>
+              during my journey exploring intersections between technology, society, and our little
+              world. btw, I like escape rooms <span className="waving-hand text-2xl">🔑</span>
             </p>
             <p className="leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-lg">
               <Link
@@ -115,7 +118,13 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                         </div>
                       </div>
                     </div>
-                    <div className="mt-10 flex">
+                    <h3 className="pt-4">{summary}</h3>
+                    <div className="flex flex-wrap pt-2">
+                      {tags.map((tag) => (
+                        <Tag key={tag} text={tag} />
+                      ))}
+                    </div>
+                    <div className="mt-5 flex">
                       <div className="capsize flex items-center text-gray-800 dark:text-gray-200">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

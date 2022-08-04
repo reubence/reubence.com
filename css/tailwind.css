@@ -12,14 +12,14 @@
       motion-safe:duration-200;
   }
   .company {
-    box-shadow: inset 0 0 0 0 #14b8a6;
-    color: #14b8a6;
+    box-shadow: inset 0 0 0 0 #2563eb;
+    color: #2563eb;
     margin: 0 -0.25rem;
     padding: 0 0.25rem;
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   .company:hover {
-    box-shadow: inset 200px 0 0 0 #14b8a6;
+    box-shadow: inset 200px 0 0 0 #2563eb;
     color: white;
   }
 }
@@ -27,7 +27,7 @@
 .link-underline {
   border-bottom-width: 0;
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(to right, #14b8a6, #14b8a6);
+    linear-gradient(to right, #3b82f6, #1e3a8a);
   background-size: 0 2px;
   background-position: 0 100%;
   background-repeat: no-repeat;
@@ -36,7 +36,7 @@
 
 .link-underline-black {
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(to right, #14b8a6, #14b8a6);
+    linear-gradient(to right, #3b82f6, #1e3a8a);
 }
 
 .link-underline:hover {

@@ -23,17 +23,15 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
       <div className="mt-10 px-2 sm:px-0">
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            what are you doing,{' '}
-            <Link href="https://dev.to/emsesc">
-              <a className="text-black underline decoration-violet-500 underline-offset-4 hover:cursor-pointer hover:text-violet-500 dark:text-white hover:dark:text-violet-500">
-                really
-              </a>
+            what am I doing, like,{' '}
+            <Link href="https://nownownow.com/about">
+              <span className="company font-bold text-blue-500 hover:cursor-pointer">now</span>
             </Link>
             ?{' '}
           </h1>
-          <h3 className="text-center text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-2xl md:leading-14">
-            Last updated August 3rd, 2022
-          </h3>
+          <div className="text-center text-2xl font-bold ">
+            Last updated <h3 className="inline-block text-violet-500">August 3rd, 2022</h3>
+          </div>
         </div>
         <div className="items-start space-y-2  xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 xl:sticky xl:top-24">
@@ -41,7 +39,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
               <div className="animate-tilt absolute -inset-px animate-pulse rounded-2xl bg-gradient-to-r from-primary-500 via-[#3B82F6] to-[#9333EA] blur-md transition duration-1000 group-hover:-inset-1 group-hover:animate-none group-hover:opacity-100 group-hover:duration-1000"></div>
               <div className="relative h-full w-full rounded-2xl bg-white px-6 py-6 dark:bg-background-color sm:px-12">
                 <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-                  🏔
+                  🏔🐏
                 </h1>
                 <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
                   emily chen

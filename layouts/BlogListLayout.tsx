@@ -100,7 +100,13 @@ export default function BlogListLayout({
                         </div>
                       </div>
                     </div>
-                    <div className="mt-10 flex">
+                    <h3 className="pt-4">{summary}</h3>
+                    <div className="flex flex-wrap pt-2">
+                      {tags.map((tag) => (
+                        <Tag key={tag} text={tag} />
+                      ))}
+                    </div>
+                    <div className="mt-5 flex">
                       <div className="capsize flex items-center text-gray-800 dark:text-gray-200">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"

@@ -18,7 +18,7 @@ export default function Projects() {
           </p>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
             PS : I'm still designing this page, please visit my{' '}
-            <Link href="https://github.com/reubence" passHref>
+            <Link href="https://github.com/emsesc" passHref>
               <span className="company font-bold text-primary-500 hover:cursor-pointer">
                 GitHub
               </span>
