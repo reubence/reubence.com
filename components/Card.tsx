@@ -1,9 +1,10 @@
 import Image from './Image'
 import Link from './Link'
 import siteMetadata from '@/data/siteMetadata'
+import Tag from '@/components/Tag'
 import SocialIcon from '@/components/social-icons'
 
-const Card = ({ title, description, imgSrc, href, demo }) => (
+const Card = ({ title, description, imgSrc, href, demo, tags }) => (
   <div className="md p-4 md:w-1/2" style={{ maxWidth: '544px' }}>
     <div
       className={`${
@@ -43,6 +44,16 @@ const Card = ({ title, description, imgSrc, href, demo }) => (
         <p className="prose prose-lg mb-3 max-w-none text-gray-500 dark:text-gray-400 sm:prose-xl">
           {description}
         </p>
+        <div className="flex flex-wrap pb-5 pt-2">
+          {tags.map((tag) => (
+            <a
+              key={tag}
+              className="m-1 rounded-lg border border-primary-500 py-1 px-3 text-sm font-medium uppercase text-primary-500 transition duration-500 ease-in-out"
+            >
+              {tag.split(' ').join('-')}
+            </a>
+          ))}
+        </div>
         <div className="mb-3 flex space-x-4">
           <SocialIcon kind="github" href={href} size={6} />
           {demo && (
