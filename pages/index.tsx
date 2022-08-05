@@ -64,7 +64,7 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               ) and show off{' '}
               <Link href="/projects">
                 <a className="text-black underline decoration-teal-500 underline-offset-4 hover:cursor-pointer hover:text-teal-500 dark:text-white hover:dark:text-teal-500">
-                  some stuff I've create
+                  some stuff I've created
                 </a>
               </Link>{' '}
               during my journey exploring intersections between technology, society, and our little
