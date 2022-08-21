@@ -57,7 +57,7 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
                 {prev && (
                   <div className="pt-4 xl:pt-8">
                     <Link
-                      href={`/snippets/${prev.slug}`}
+                      href={`/blog/${prev.slug}`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                     >
                       &larr; {prev.title}
@@ -67,7 +67,7 @@ export default function PostLayout({ frontMatter, next, prev, children }: Props)
                 {next && (
                   <div className="pt-4 xl:pt-8">
                     <Link
-                      href={`/snippets/${next.slug}`}
+                      href={`/blog/${next.slug}`}
                       className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
                     >
                       {next.title} &rarr;
