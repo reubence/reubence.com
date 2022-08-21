@@ -30,7 +30,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
             ?{' '}
           </h1>
           <div className="text-center text-2xl font-bold ">
-            Last updated <h3 className="inline-block text-violet-500">August 3rd, 2022</h3>
+            Last updated <h3 className="inline-block text-violet-500">August 21st, 2022</h3>
           </div>
         </div>
         <div className="items-start space-y-2  xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
@@ -46,7 +46,7 @@ export default function AuthorLayout({ children, frontMatter }: Props) {
                 </h3>
                 <div className="text-gray-500 dark:text-gray-400">aspiring escape room master</div>
                 <div className="text-gray-500 dark:text-gray-400">
-                  currently in <b>the mountains</b>
+                  currently at <b>school</b>
                 </div>{' '}
               </div>
             </div>
