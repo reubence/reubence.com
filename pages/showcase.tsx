@@ -3,6 +3,7 @@ import projectsData from '@/data/projectsData'
 import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
+import HackerEffectText from '@/components/showcase/HackerEffectText'
 
 export default function Showcase() {
   return (
@@ -27,7 +28,7 @@ export default function Showcase() {
           </p>
         </div>
         <div className="container py-12">
-          <div className="-m-4 flex flex-wrap">
+          <div className="flex flex-wrap">
             {/* {projectsData.map((d) => (
               <Card
                 key={d.title}
@@ -37,7 +38,7 @@ export default function Showcase() {
                 href={d.href}
               />
             ))} */}
-            <h1 className="font-mono text-7xl font-bold text-white">Reuben Rapose</h1>
+            <HackerEffectText />
           </div>
         </div>
       </div>
