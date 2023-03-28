@@ -31,10 +31,10 @@ const HackerEffectText = () => {
   return (
     <h1
       id="rando"
-      data-value="REUBEN RAPOSE"
-      className="font-mono text-7xl font-bold uppercase text-white"
+      data-value="HOVER HERE"
+      className="cursor-pointer font-mono text-4xl font-bold uppercase text-white hover:text-green-400 md:text-7xl "
     >
-      REUBEN RAPOSE
+      HOVER HERE
     </h1>
   )
 }
