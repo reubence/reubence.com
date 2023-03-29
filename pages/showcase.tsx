@@ -4,6 +4,8 @@ import Card from '@/components/Card'
 import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
 import HackerEffectText from '@/components/showcase/HackerEffectText'
+import MagicalHoverEffect from '@/components/showcase/MagicalHoverEffect'
+import Head from 'next/head'
 
 export default function Showcase() {
   return (
@@ -28,7 +30,7 @@ export default function Showcase() {
           </p>
         </div>
         <div className="container py-12">
-          <div className="flex flex-wrap">
+          <div className="flex flex-col gap-y-10">
             {/* {projectsData.map((d) => (
               <Card
                 key={d.title}
@@ -39,6 +41,7 @@ export default function Showcase() {
               />
             ))} */}
             <HackerEffectText />
+            <MagicalHoverEffect />
           </div>
         </div>
       </div>
