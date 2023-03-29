@@ -6,6 +6,13 @@
   --card-color: rgb(23, 23, 23);
 }
 
+/* If the user prefers light mode, 
+we still enforce color-scheme: dark, despite the user preference */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: dark;
+  }
+}
 @layer utilities {
   .special-underline {
     @apply from-primary-color-500 to-primary-color-500 dark:from-primary-color-dark-500 dark:to-primary-color-dark-500 bg-gradient-to-r
