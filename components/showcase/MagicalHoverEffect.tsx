@@ -42,8 +42,8 @@ export const MagicalHoverEffect = () => {
           x = e.clientX - rect.left,
           y = e.clientY - rect.top
 
-        card.style.setProperty('--mouse-x', `${x}px`)
-        card.style.setProperty('--mouse-y', `${y}px`)
+        card['style'].setProperty('--mouse-x', `${x}px`)
+        card['style'].setProperty('--mouse-y', `${y}px`)
       }
     }
     const script = document.createElement('script')
