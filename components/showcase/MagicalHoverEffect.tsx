@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import 'font-awesome/css/font-awesome.min.css'
 
 //JSON OBJECT LIST WITH ALL THE CARDS
 const cards = [
@@ -36,6 +37,16 @@ const cards = [
 
 export const MagicalHoverEffect = () => {
   useEffect(() => {
+    const script = document.createElement('script')
+    script.src = 'https://kit.fontawesome.com/1ee8f271b9.js'
+    document.body.appendChild(script)
+
+    return () => {
+      document.body.removeChild(script)
+    }
+  }, [])
+
+  useEffect(() => {
     document.getElementById('cards').onmousemove = (e) => {
       for (const card of document.getElementsByClassName('card')) {
         const rect = card.getBoundingClientRect(),
@@ -46,11 +57,6 @@ export const MagicalHoverEffect = () => {
         card['style'].setProperty('--mouse-y', `${y}px`)
       }
     }
-    const script = document.createElement('script')
-
-    script.src = 'https://kit.fontawesome.com/1ee8f271b9.js'
-
-    document.body.appendChild(script)
   }, [])
 
   return (
@@ -63,11 +69,11 @@ export const MagicalHoverEffect = () => {
           <div className="card group-hover:after:opacity-100" key={index}>
             <div className="card-content">
               <div className="card-image">
-                <i className={`fa-duotone ${card.icon}`}></i>
+                <i className={`fa fa-spinner fa-spin ${card.icon}`}></i>
               </div>
               <div className="card-info-wrapper">
                 <div className="card-info">
-                  <i className={`fa-duotone ${card.icon}`}></i>
+                  <i className={`fa fa-spinner fa-spin ${card.icon}`}></i>
                   <div className="card-info-title">
                     <h3>{card.title}</h3>
                     <h4>{card.description}</h4>
