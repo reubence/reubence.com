@@ -32,7 +32,7 @@ const HackerEffectText = () => {
     <h1
       id="rando"
       data-value="HOVER HERE"
-      className="cursor-pointer font-mono text-4xl font-bold uppercase text-white hover:text-green-400 md:text-7xl "
+      className="cursor-pointer rounded-md py-2 px-4 font-mono text-4xl font-bold uppercase text-white hover:bg-white hover:text-black md:text-7xl "
     >
       HOVER HERE
     </h1>
