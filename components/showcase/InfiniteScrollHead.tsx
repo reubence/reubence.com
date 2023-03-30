@@ -49,8 +49,7 @@ const Tag = ({ text }) => (
 const InfiniteScrollHead = () => (
   <div className="app">
     <header>
-      <h1>Infinite Scroll Animation</h1>
-      <p>CSS only, content independent, bi-directional, customizable</p>
+      <h1>Show Off App Features</h1>
     </header>
     <div className="tag-list">
       {[...new Array(ROWS)].map((_, i) => (
