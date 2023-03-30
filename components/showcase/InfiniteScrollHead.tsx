@@ -33,13 +33,16 @@ const InfiniteLoopSlider = ({
   duration: number
   reverse?: number
 }) => {
+  //set --duration and --direction using js
   return (
     <div
       className="loop-slider"
-      style={{
-        '--duration': `${duration}ms`,
-        '--direction': reverse ? 'reverse' : 'normal',
-      }}
+      style={
+        {
+          '--duration': `${duration}ms`,
+          '--direction': reverse ? 'reverse' : 'normal',
+        } as React.CSSProperties
+      }
     >
       <div className="inner">
         {children}
