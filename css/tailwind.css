@@ -4,8 +4,6 @@
 :root {
   --bg-color: rgb(20, 20, 20);
   --card-color: rgb(23, 23, 23);
-  --duration: 1500ms;
-  --direction: reverse;
 }
 
 /* If the user prefers light mode, 
