@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import { toString } from 'mdast-util-to-string'
 
 const COLORS = ['#bbf7d0', '#99f6e4', '#bfdbfe', '#ddd6fe', '#f5d0fe', '#fed7aa', '#fee2e2']
 const TAGS = [
@@ -23,7 +24,15 @@ const TAGS_PER_ROW = 5
 const random = (min, max) => Math.floor(Math.random() * (max - min)) + min
 const shuffle = (arr) => [...arr].sort(() => 0.5 - Math.random())
 
-const InfiniteLoopSlider = ({ children, duration, reverse = false }) => {
+const InfiniteLoopSlider = ({
+  children,
+  duration,
+  reverse = NaN,
+}: {
+  children: React.ReactNode
+  duration: number
+  reverse?: number
+}) => {
   return (
     <div
       className="loop-slider"
