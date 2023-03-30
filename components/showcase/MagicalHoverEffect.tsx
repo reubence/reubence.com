@@ -50,7 +50,7 @@ export const MagicalHoverEffect = () => {
   }, [])
 
   return (
-    <div className='bg-[var(--bg-color)] p-0" m-0 flex h-screen items-center justify-center overflow-hidden lg:max-w-[1000px] lg:items-start lg:overflow-auto lg:py-2'>
+    <div className='bg-[var(--bg-color)] p-0" m-0 flex items-center justify-center overflow-hidden lg:max-w-[1000px] lg:items-start lg:overflow-auto lg:py-2'>
       <div
         id="cards"
         className="hover:group flex w-[calc(100%-20px)] max-w-[916px] flex-wrap gap-2"

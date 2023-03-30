@@ -6,6 +6,7 @@ import Link from 'next/link'
 import HackerEffectText from '@/components/showcase/HackerEffectText'
 import MagicalHoverEffect from '@/components/showcase/MagicalHoverEffect'
 import Head from 'next/head'
+import InfiniteScrollHead from '@/components/showcase/InfiniteScrollHead'
 
 export default function Showcase() {
   return (
@@ -42,6 +43,7 @@ export default function Showcase() {
             ))} */}
             <HackerEffectText />
             <MagicalHoverEffect />
+            <InfiniteScrollHead />
           </div>
         </div>
       </div>
