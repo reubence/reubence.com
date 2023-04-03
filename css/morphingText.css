@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Explanation in JS tab */
+
+  /* Cool font from Google Fonts! */
+  @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+  .container {
+    /* Center the text in the viewport. */
+    @apply absolute top-0 bottom-0 m-auto h-20 w-screen;
+
+    /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+    filter: url(#threshold) blur(0.6px);
+  }
+
+  /* Your average text styling */
+  .text {
+    @apply absolute inline-block w-full;
+    font-family: 'Raleway', sans-serif;
+    font-size: 80pt;
+
+    @apply select-none text-center;
+  }
+}

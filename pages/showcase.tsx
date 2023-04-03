@@ -8,6 +8,8 @@ import MagicalHoverEffect from '@/components/showcase/MagicalHoverEffect'
 import Head from 'next/head'
 import InfiniteScrollHead from '@/components/showcase/InfiniteScrollHead'
 import SparkleButton from '@/components/showcase/SparkleButton'
+import MorphingText from '@/components/showcase/MorphingText'
+import AuroraText from '@/components/showcase/AuroraText'
 
 export default function Showcase() {
   return (
@@ -45,8 +47,9 @@ export default function Showcase() {
             <HackerEffectText />
             <MagicalHoverEffect />
             <InfiniteScrollHead />
-
+            <MorphingText />
             <SparkleButton />
+            <AuroraText />
           </div>
         </div>
       </div>
