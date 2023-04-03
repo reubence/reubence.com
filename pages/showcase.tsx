@@ -47,7 +47,6 @@ export default function Showcase() {
             <HackerEffectText />
             <MagicalHoverEffect />
             <InfiniteScrollHead />
-            <MorphingText />
             <SparkleButton />
             <AuroraText />
           </div>
