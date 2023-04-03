@@ -652,7 +652,6 @@ svg {
   bottom: 0;
   right: 0;
   left: 0;
-
   /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
   filter: url(#threshold) blur(0.6px);
 }
@@ -701,7 +700,6 @@ svg {
   text-align: center;
   display: grid;
   place-items: center;
-  background-color: var(--bg);
   color: #fff;
   font-family: 'Inter', 'DM Sans', Arial, sans-serif;
 }
@@ -712,7 +710,6 @@ svg {
   letter-spacing: var(--ls);
   position: relative;
   overflow: hidden;
-  background: var(--bg);
   margin: 0;
 }
 

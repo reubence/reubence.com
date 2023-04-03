@@ -67,7 +67,7 @@ export const MorphingText = () => {
 
       const newTime = new Date()
       const shouldIncrementIndex = cooldown > 0
-      const dt = (newTime - time) / 1000
+      const dt = (newTime.getTime() - time.getTime()) / 1000
       time = newTime
 
       cooldown -= dt
