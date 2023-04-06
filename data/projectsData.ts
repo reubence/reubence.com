@@ -1,5 +1,15 @@
 const projectsData = [
   {
+    title: 'AWS Workshop',
+    imgSrc:
+      'https://user-images.githubusercontent.com/69332964/230267670-a34ffd1e-35b9-4c32-8104-85c5afa6ab70.png',
+    description:
+      'A short 1-hour workshop that introduces participants to AWS Lambda through an interactive pixel board',
+    tags: ['aws', 'python', 'chakra-ui', 'react-js', 'sql'],
+    href: 'https://github.com/bitprj/art-heist',
+    demo: 'https://art-heist.vercel.app/',
+  },
+  {
     title: 'Intro to Serverless',
     imgSrc:
       'https://user-images.githubusercontent.com/69332964/174205195-7ea4c0a9-0b25-458c-9079-f642b34f3e2d.png',
