@@ -45,9 +45,9 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
               Rapose
             </h1>
             <p className="text-black dark:text-white sm:pr-6 sm:text-lg sm:leading-8">
-              Welcome to my Digital Garden – I am a <span className="">Data Scientist</span> by
-              training and <span className="">Full-Stack Developer</span> by passion who loves
-              building for the web & mobile. Also sometimes for the toaster.{' '}
+              Welcome to my Digital Garden – I am a Data Scientist by training and Full-Stack
+              Developer by passion who loves building for the web & mobile. Also sometimes for the
+              toaster.{' '}
               {/* In my
               free time, I like developing{' '}
               <Link
