@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
+  // if a user prefers light color scheme o
   render() {
     return (
       <Html lang="en" className="scroll-smooth">
