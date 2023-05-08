@@ -13,6 +13,7 @@ export const getStaticProps: GetStaticProps<{ posts: PostFrontMatter[] }> = asyn
 
   return { props: { posts } }
 }
+// Make a dummy variable with data
 
 const gradients = {
   '0': ' from-[#FDE68A] via-[#FCA5A5] to-[#FECACA]',
