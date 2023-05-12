@@ -67,8 +67,14 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
                   some stuff I've created
                 </a>
               </Link>{' '}
-              during my journey exploring intersections between technology, society, and our little
-              world. btw, I like escape rooms <span className="waving-hand text-2xl">🔑</span>
+              during my journey exploring intersections between technology, art, and our little
+              world. while you're here, check out some{' '}
+              <Link href="/photos">
+                <a className="text-black underline decoration-cyan-300 underline-offset-4 hover:cursor-pointer hover:text-cyan-300 dark:text-white hover:dark:text-teal-500">
+                  photos
+                </a>
+              </Link>{' '}
+              <span className="waving-hand text-2xl">📸</span>
             </p>
             <p className="leading-7 text-gray-500 underline underline-offset-4 sm:pr-6 sm:text-lg">
               <Link
