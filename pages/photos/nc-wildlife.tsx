@@ -14,6 +14,14 @@ const pictures = [
 export default function Birds() {
   return (
     <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
+      <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          nc wildlife
+        </h1>
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          portraits of your average NC squirrels and more
+        </p>
+      </div>
       <div className="-m-1 flex flex-wrap md:-m-2">
         {pictures.map((url) => (
           <div key={url} className="flex w-1/2 flex-wrap">

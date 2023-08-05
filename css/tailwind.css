@@ -19,7 +19,7 @@
     transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   .company:hover {
-    box-shadow: inset 200px 0 0 0 #2563eb;
+    box-shadow: inset 500px 0 0 0 #2563eb;
     color: white;
   }
 }
